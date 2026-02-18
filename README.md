@@ -14,25 +14,29 @@
 ## Lenguajes y tecnologías usadas
 - **HTML** — estructura de la página (títulos, secciones, imágenes, botones).
 - **CSS** — estilos y diseño (colores, tipografías, tamaños, responsive).
-- **JavaScript (opcional)** — si quieres añadir interactividad (ej. sliders, abrir modales, animaciones).
+- **JavaScript** — si quieres añadir interactividad (ej. sliders, abrir modales, animaciones).
 - **Imágenes** — archivos `.jpg` o `.png` para las fotos de las obras y el café.
 - **Bootstrap** — si quieres usar componentes ya hechos para facilitar el diseño.
 
 ---
 
-## Estructura de archivos sugerida
+## 📁 Estructura de archivos
+
+```text
 /proyecto-zehn
 │
-├─ index.html 
-├─ views
-│ ├─ css/
-│ ├─ about.html
-│ ├─ gallery.html
+├─ index.html
+├─ views/
+│  ├─ css/
+│  ├─ about.html
+│  └─ gallery.html
+│
 ├─ images/
-│ ├─ banner.jpg
-│ ├─ gallery1.jpg
-│ └─ gallery2.jpg
-│ ├─ gallery3.jpg
-│ └─ gallery4.jpg
+│  ├─ banner.jpg
+│  ├─ gallery1.jpg
+│  ├─ gallery2.jpg
+│  ├─ gallery3.jpg
+│  └─ gallery4.jpg
+│
 ├─ script.js
-└─ styles.css 
+└─ styles.css
