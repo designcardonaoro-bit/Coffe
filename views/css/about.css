@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -72,6 +78,147 @@ header .container {
   color: #fff;
   cursor: pointer;
   font-size: 0.95rem;
+}
+
+/* ********************************** */
+/*               3Containers               */
+/* ********************************** */
+
+/* Sección de tres tarjetas alineadas */
+.news-section {
+  display: flex;
+  gap: 24px;
+  align-items: stretch;      /* para que las tarjetas tengan la misma altura */
+  justify-content: space-between;
+  margin: 24px 0;
+  flex-wrap: wrap;           /* permite que bajen a otra fila en pantallas pequeñas */
+}
+
+/* Cada tarjeta */
+.news-card {
+  position: relative;
+  background: #f5f5f5;
+  padding: 20px;
+  flex: 1 1 calc(33.333% - 16px); /* 3 columnas */
+  min-width: 240px;                /* evitar que se compriman demasiado */
+  border-radius: 3px;
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.03);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Contenido interno con espacio para el botón */
+.card-content {
+  padding-right: 48px;  /* deja espacio al botón + */
+  flex: 1;              /* empuja el botón hacia abajo */
+}
+
+/* Estilos de texto */
+.category {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.card-title {
+  font-size: 20px;
+  line-height: 1.06;
+  margin: 0 0 12px 0;
+  font-weight: 500;
+}
+
+.card-excerpt {
+  margin: 0;
+  color: #444;
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+/* Botón pequeño con + en la esquina inferior derecha */
+.card-more {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  width: 34px;
+  height: 34px;
+  border: none;
+  background: #222;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 2px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ********************************** */
+/*               FORM               */
+/* ********************************** */
+
+.form-register {
+  width: 500px;
+  background: #F8F9FA;
+  padding: 30px;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 50px; /* Added margin to create space between the form and the footer */
+  border-radius: 4px;
+  font-family: 'calibri';
+  color: rgb(0, 0, 0);
+  box-shadow: 2px 2px 2px #d2b495;
+}
+
+.form-register h4 {
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.controls {
+  width: 100%;
+  background: #919394;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #d2b495;
+  font-family: 'calibri';
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+}
+
+.form-register p {
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 40px;
+  color:gray;
+}
+
+.form-register a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.form-register a:hover {
+  color: rgb(158, 158, 158);
+  text-decoration: underline;
+}
+
+.form-register .botons {
+  width: 100%;
+  background: #000000;
+  border: none;
+  padding: 12px;
+  color: rgb(255, 255, 255);
+  margin: 16px 0;
+  font-size: 16px;
+}
+
+.form-register .text-muted {
+  margin: 10px 0px; /* Add margin to separate the paragraph from other elements */
+  line-height: 1.5; /* Adjust line spacing for better readability */
+  text-align: justify; /* Align text for a clean and ordered look */
 }
 
 /* ********************************** */
