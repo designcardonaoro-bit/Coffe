@@ -80,8 +80,101 @@ header .container {
   font-size: 0.95rem;
 }
 
+.about .lead {
+  font-size: 1.1rem;
+  margin: 0 0 14px 0; /* Reduced font size for smaller text */
+}
+
 /* ********************************** */
-/*               3Containers               */
+/*               Descubre             */
+/* ********************************** */
+
+:root{
+  --bg:#f7f8f9;
+  --text:#202124;
+  --muted:#4b4b4b;
+  --accent:#b89373; /* amarillo */
+  --maxw:1200px;
+  --gap:28px;
+  font-synthesis: none;
+}
+
+.hero{
+  background: var(--bg);
+  padding: 40px 16px;
+}
+
+/* Contenedor centrado y layout 2 columnas */
+.hero-inner{
+  max-width: var(--maxw);
+  margin: 0 auto;
+  display:flex;
+  gap: var(--gap);
+  align-items: center;
+}
+
+/* Columna de texto */
+.hero-text{
+  flex: 1;
+  min-width: 280px;
+}
+
+.hero-title{
+  color: var(--text);
+  margin: 0 0 12px 0;
+  font-weight: 500;
+  /* tamaño responsive */
+  font-size: clamp(28px, 4.8vw, 56px);
+  line-height: 1.02;
+}
+
+.hero-lead{
+  margin: 0 0 14px 0;
+  color: var(--muted);
+  font-size: 20px;
+}
+
+.hero-desc{
+  margin: 0 0 22px 0;
+  color: var(--muted);
+  line-height: 1.5;
+  max-width: 60ch;
+  font-size: 15px;
+}
+
+/* Botón pill amarillo */
+.hero-cta{
+  display:inline-block;
+  background: var(--accent);
+  color: #ffffff;
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 999px;
+  font-weight: 600;
+  letter-spacing: .4px;
+  box-shadow: 0 2px 0 rgba(0,0,0,0.06) inset;
+}
+
+/* Columna de imagen (deja espacio para que pegues la imagen) */
+.hero-media{
+  flex: 1;
+  display:flex;
+  justify-content: flex-end;
+  min-width: 280px;
+}
+
+/* La imagen debe ocupar todo el ancho disponible de su columna */
+.hero-media img{
+  width: 100%;
+  max-width: 520px; /* controla el ancho máximo */
+  height: auto;
+  display:block;
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+/* ********************************** */
+/*               3Containers          */
 /* ********************************** */
 
 /* Sección de tres tarjetas alineadas */
@@ -166,7 +259,7 @@ header .container {
   border-radius: 4px;
   font-family: 'calibri';
   color: rgb(0, 0, 0);
-  box-shadow: 2px 2px 2px #d2b495;
+  box-shadow: 1px 2px #d2b495;
 }
 
 .form-register h4 {
@@ -389,3 +482,5 @@ header .container {
 .navbar .nav-link:hover {
 	color: #333;
 }
+
+
