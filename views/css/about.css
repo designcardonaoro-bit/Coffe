@@ -155,6 +155,11 @@ header .container {
   box-shadow: 0 2px 0 rgba(0,0,0,0.06) inset;
 }
 
+.hero-cta:hover{
+  background: #a07b5c;
+  box-shadow: 0 4px 0 rgba(0,0,0,0.1) inset;
+}
+
 /* Columna de imagen (deja espacio para que pegues la imagen) */
 .hero-media{
   flex: 1;
